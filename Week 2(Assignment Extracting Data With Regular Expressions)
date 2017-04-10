@@ -1,0 +1,11 @@
+import re
+total=0
+handle=open('actual.txt','r')
+for line in handle:
+	line=line.rstrip()
+	y=map(int,re.findall('[0-9]+',line))
+	total=total+sum(y)
+print total
+		
+    
+    /**Replace the file-name with the name your file**/
